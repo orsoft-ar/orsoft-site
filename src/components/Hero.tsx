@@ -22,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-8 inline-flex items-center justify-center w-28 h-28 rounded-full border-2 border-violet/30 p-2"
         >
-          <Image src="/logo.png" alt="OrSoft" width={96} height={96} className="object-contain" />
+          <Image src="/logo.png" alt="OrSoft" width={96} height={96} className="rounded-full object-cover" />
         </motion.div>
 
         <motion.h1
