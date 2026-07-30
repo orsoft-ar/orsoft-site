@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="py-12 px-6 border-t border-white/10">
+    <footer className="py-12 px-6 border-t border-[var(--input-border)]">
       <div className="max-w-6xl mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           <motion.div
@@ -26,17 +26,17 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold mb-3">Empresa</h4>
             <ul className="space-y-2 text-sm text-foreground/50">
-              <li><a href="#empresa" className="hover:text-violet transition-colors">Sobre OrSoft</a></li>
-              <li><a href="#metodologia" className="hover:text-violet transition-colors">Metodología</a></li>
+              <li><a href="#empresa" className="hover:text-violet-accent transition-colors">Sobre OrSoft</a></li>
+              <li><a href="#metodologia" className="hover:text-violet-accent transition-colors">Metodología</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-sm font-semibold mb-3">Servicios</h4>
             <ul className="space-y-2 text-sm text-foreground/50">
-              <li><a href="#servicios" className="hover:text-violet transition-colors">Software a medida</a></li>
-              <li><a href="#servicios" className="hover:text-violet transition-colors">Apps web</a></li>
-              <li><a href="#servicios" className="hover:text-violet transition-colors">Automatización</a></li>
+              <li><a href="#servicios" className="hover:text-violet-accent transition-colors">Software a medida</a></li>
+              <li><a href="#servicios" className="hover:text-violet-accent transition-colors">Apps web</a></li>
+              <li><a href="#servicios" className="hover:text-violet-accent transition-colors">Automatización</a></li>
             </ul>
           </div>
 
@@ -44,12 +44,12 @@ export default function Footer() {
             <h4 className="text-sm font-semibold mb-3">Contacto</h4>
             <ul className="space-y-2 text-sm text-foreground/50">
               <li>
-                <a href="mailto:mgerbaudo02@gmail.com" className="hover:text-violet transition-colors">
+                <a href="mailto:mgerbaudo02@gmail.com" className="hover:text-violet-accent transition-colors">
                   mgerbaudo02@gmail.com
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com/orsoft.site" target="_blank" rel="noopener noreferrer" className="hover:text-violet transition-colors">
+                <a href="https://instagram.com/orsoft.site" target="_blank" rel="noopener noreferrer" className="hover:text-violet-accent transition-colors">
                   @orsoft.site
                 </a>
               </li>
@@ -62,7 +62,7 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.2 }}
-          className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4"
+          className="pt-8 border-t border-[var(--input-border)] flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p className="text-sm text-foreground/40">
             OrSoft &copy; {new Date().getFullYear()}

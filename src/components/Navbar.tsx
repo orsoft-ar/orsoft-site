@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { label: "Empresa", href: "#empresa" },
@@ -24,7 +25,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/90 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/5"
+          ? "bg-background/90 backdrop-blur-md border-b border-[var(--input-border)] shadow-lg shadow-black/5"
           : "bg-transparent"
       }`}
     >
@@ -51,11 +52,12 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-foreground/70 hover:text-violet transition-colors"
+              className="text-sm text-foreground/70 hover:text-violet-accent transition-colors"
             >
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
           <a
             href="#contacto"
             className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark transition-colors"
@@ -80,18 +82,19 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-white/10 bg-background/95 backdrop-blur-md">
+        <div className="md:hidden border-t border-[var(--input-border)] bg-background/95 backdrop-blur-md">
           <div className="px-6 py-4 flex flex-col gap-4">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-foreground/70 hover:text-violet transition-colors"
+                className="text-sm text-foreground/70 hover:text-violet-accent transition-colors"
               >
                 {link.label}
               </a>
             ))}
+            <ThemeToggle />
             <a
               href="#contacto"
               onClick={() => setOpen(false)}

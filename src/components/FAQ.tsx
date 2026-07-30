@@ -40,7 +40,7 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas <span className="text-violet">frecuentes</span>
+            Preguntas <span className="text-violet-accent">frecuentes</span>
           </h2>
         </motion.div>
 
@@ -54,17 +54,17 @@ export default function FAQ() {
               transition={{ duration: 0.3, delay: i * 0.05 }}
               className={`rounded-xl border overflow-hidden transition-all ${
                 openIndex === i
-                  ? "border-violet/30 bg-violet/[0.03]"
-                  : "border-white/10 hover:border-white/20"
+                  ? "border-violet-accent/30 bg-violet-accent/[0.03]"
+                  : "border-[var(--input-border)] hover:border-foreground/30"
               }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-white/5 transition-colors"
+                className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-[var(--section-alt)] transition-colors"
               >
                 <span
                   className={`font-medium text-sm ${
-                    openIndex === i ? "text-violet" : ""
+                    openIndex === i ? "text-violet-accent" : ""
                   }`}
                 >
                   {faq.q}
@@ -78,7 +78,7 @@ export default function FAQ() {
                   strokeWidth="2"
                   className={`shrink-0 transition-all ${
                     openIndex === i
-                      ? "rotate-180 text-violet"
+                      ? "rotate-180 text-violet-accent"
                       : "text-foreground/40"
                   }`}
                 >

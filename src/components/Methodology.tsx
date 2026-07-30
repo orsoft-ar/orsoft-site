@@ -21,7 +21,7 @@ const stepVariants = {
 
 export default function Methodology() {
   return (
-    <section id="metodologia" className="py-24 px-6 bg-white/5">
+    <section id="metodologia" className="py-24 px-6 bg-[var(--section-alt)]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export default function Methodology() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Un proceso pensado{" "}
-            <span className="text-violet">para obtener mejores resultados</span>
+            <span className="text-violet-accent">para obtener mejores resultados</span>
           </h2>
           <p className="text-foreground/60 max-w-xl mx-auto">
             Nuestra metodología de trabajo está diseñada para reducir riesgos y garantizar
@@ -41,7 +41,7 @@ export default function Methodology() {
         </motion.div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-14 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-violet/20 via-violet/40 to-violet/20" />
+          <div className="hidden lg:block absolute top-14 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-violet-accent/20 via-violet-accent/40 to-violet-accent/20" />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {steps.map((step, i) => (
@@ -54,8 +54,8 @@ export default function Methodology() {
                 variants={stepVariants}
                 className="text-center relative"
               >
-                <div className="relative z-10 w-14 h-14 rounded-full bg-violet/10 flex items-center justify-center mx-auto mb-4 border-2 border-violet/20 group-hover:border-violet/40 transition-colors">
-                  <span className="text-lg font-bold text-violet">{step.number}</span>
+                <div className="relative z-10 w-14 h-14 rounded-full bg-violet-accent/10 flex items-center justify-center mx-auto mb-4 border-2 border-violet-accent/20 group-hover:border-violet-accent/40 transition-colors">
+                  <span className="text-lg font-bold text-violet-accent">{step.number}</span>
                 </div>
                 <h3 className="font-semibold mb-2">{step.title}</h3>
                 <p className="text-sm text-foreground/60 leading-relaxed">{step.desc}</p>

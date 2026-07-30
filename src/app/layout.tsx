@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -63,9 +64,25 @@ export default function RootLayout({
   return (
     <html
       lang="es"
+      data-theme="night"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var theme = localStorage.getItem("theme");
+                if (theme === "night" || theme === "day") {
+                  document.documentElement.setAttribute("data-theme", theme);
+                } else {
+                  document.documentElement.setAttribute("data-theme", "night");
+                }
+              })();
+            `,
+          }}
+        />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-HPTTHGDPVV"
@@ -181,6 +198,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

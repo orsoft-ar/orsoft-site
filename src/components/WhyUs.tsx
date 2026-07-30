@@ -21,7 +21,7 @@ const cardVariants = {
 
 export default function WhyUs() {
   return (
-    <section className="py-24 px-6 bg-white/5">
+    <section className="py-24 px-6 bg-[var(--section-alt)]">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export default function WhyUs() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Un socio tecnológico <span className="text-violet">para tu empresa</span>
+            Un socio tecnológico <span className="text-violet-accent">para tu empresa</span>
           </h2>
           <p className="text-foreground/60 max-w-2xl mx-auto leading-relaxed">
             Más que desarrollar software, buscamos entender el desafío detrás de cada
@@ -49,9 +49,9 @@ export default function WhyUs() {
               viewport={{ once: true, margin: "-50px" }}
               variants={cardVariants}
               whileHover={{ x: 4 }}
-              className="flex gap-4 p-6 rounded-xl glass-card hover:border-violet/30 hover:bg-violet/[0.03] transition-all"
+              className="flex gap-4 p-6 rounded-xl glass-card hover:border-violet-accent/30 hover:bg-violet-accent/[0.03] transition-all"
             >
-              <r.icon className="w-6 h-6 text-violet shrink-0 mt-0.5" />
+              <r.icon className="w-6 h-6 text-violet-accent shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold mb-1">{r.title}</h3>
                 <p className="text-sm text-foreground/60 leading-relaxed">{r.desc}</p>

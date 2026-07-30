@@ -32,7 +32,7 @@ export default function TechCapabilities() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ingeniería de software aplicada{" "}
-            <span className="text-violet">a soluciones reales</span>
+            <span className="text-violet-accent">a soluciones reales</span>
           </h2>
           <p className="text-foreground/60 max-w-2xl mx-auto mb-12 leading-relaxed">
             Combinamos arquitectura moderna, buenas prácticas de desarrollo y experiencia
@@ -50,9 +50,9 @@ export default function TechCapabilities() {
               viewport={{ once: true, margin: "-30px" }}
               variants={capVariants}
               whileHover={{ y: -4, scale: 1.03 }}
-              className="p-6 rounded-xl glass-card hover:border-violet/30 hover:bg-violet/[0.03] transition-all"
+              className="p-6 rounded-xl glass-card hover:border-violet-accent/30 hover:bg-violet-accent/[0.03] transition-all"
             >
-              <c.icon className="w-8 h-8 text-violet mx-auto mb-3" />
+              <c.icon className="w-8 h-8 text-violet-accent mx-auto mb-3" />
               <p className="text-sm font-medium">{c.title}</p>
             </motion.div>
           ))}

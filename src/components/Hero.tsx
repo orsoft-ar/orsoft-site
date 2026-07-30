@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-16 hero-gradient overflow-hidden">
       <div className="absolute inset-0 hero-grid pointer-events-none" />
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-violet/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-violet/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-violet-accent/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-violet-accent/5 rounded-full blur-3xl" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-8 inline-flex items-center justify-center w-28 h-28 rounded-full border-2 border-violet/30 p-2"
+          className="mb-8 inline-flex items-center justify-center w-28 h-28 rounded-full border-2 border-violet-accent/30 p-2"
         >
           <Image src="/logo.png" alt="OrSoft" width={96} height={96} className="rounded-full object-cover" />
         </motion.div>
@@ -32,7 +32,7 @@ export default function Hero() {
           className="text-4xl md:text-6xl font-bold tracking-tight mb-6"
         >
           Soluciones de software para empresas{" "}
-          <span className="text-violet">que buscan crecer</span>
+          <span className="text-violet-accent">que buscan crecer</span>
         </motion.h1>
 
         <motion.p
@@ -54,13 +54,13 @@ export default function Hero() {
         >
           <a
             href="#contacto"
-            className="px-8 py-3 rounded-full bg-violet text-white font-medium hover:bg-violet-dark transition-all hover:shadow-lg hover:shadow-violet/25"
+            className="px-8 py-3 rounded-full bg-violet text-white font-medium hover:bg-violet-dark transition-all hover:shadow-lg hover:shadow-violet-accent/25"
           >
             Solicitar una consulta
           </a>
           <a
             href="#servicios"
-            className="px-8 py-3 rounded-full border border-white/20 text-foreground/80 hover:border-violet/50 hover:text-violet transition-colors"
+            className="px-8 py-3 rounded-full border border-[var(--input-border)] text-foreground/80 hover:border-violet-accent/50 hover:text-violet-accent transition-colors"
           >
             Conocer servicios
           </a>

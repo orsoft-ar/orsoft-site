@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-24 px-6 bg-white/5">
+    <section id="contacto" className="py-24 px-6 bg-[var(--section-alt)]">
       <div className="max-w-2xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export default function Contact() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             ¿Tenés una idea o un{" "}
-            <span className="text-violet">desafío tecnológico</span>?
+            <span className="text-violet-accent">desafío tecnológico</span>?
           </h2>
           <p className="text-foreground/60 max-w-xl mx-auto leading-relaxed">
             Escribime y analicemos juntos la mejor solución para tu negocio.
@@ -71,7 +71,7 @@ export default function Contact() {
               value={data.name}
               onChange={(e) => setData({ ...data, name: e.target.value })}
               placeholder="Tu nombre"
-              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-violet/50 focus:outline-none focus:ring-1 focus:ring-violet/30 text-sm transition-colors"
+              className="w-full px-4 py-3 rounded-xl bg-[var(--input-bg)] border border-[var(--input-border)] focus:border-violet-accent/50 focus:outline-none focus:ring-1 focus:ring-violet-accent/30 text-sm transition-colors placeholder:text-foreground/40"
             />
           </div>
 
@@ -86,7 +86,7 @@ export default function Contact() {
               value={data.email}
               onChange={(e) => setData({ ...data, email: e.target.value })}
               placeholder="tu@email.com"
-              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-violet/50 focus:outline-none focus:ring-1 focus:ring-violet/30 text-sm transition-colors"
+              className="w-full px-4 py-3 rounded-xl bg-[var(--input-bg)] border border-[var(--input-border)] focus:border-violet-accent/50 focus:outline-none focus:ring-1 focus:ring-violet-accent/30 text-sm transition-colors placeholder:text-foreground/40"
             />
           </div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
               value={data.message}
               onChange={(e) => setData({ ...data, message: e.target.value })}
               placeholder="Contame sobre tu proyecto..."
-              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-violet/50 focus:outline-none focus:ring-1 focus:ring-violet/30 text-sm transition-colors resize-none"
+              className="w-full px-4 py-3 rounded-xl bg-[var(--input-bg)] border border-[var(--input-border)] focus:border-violet-accent/50 focus:outline-none focus:ring-1 focus:ring-violet-accent/30 text-sm transition-colors resize-none placeholder:text-foreground/40"
             />
           </div>
 

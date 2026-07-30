@@ -54,7 +54,7 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Soluciones diseñadas <span className="text-violet">para cada necesidad</span>
+            Soluciones diseñadas <span className="text-violet-accent">para cada necesidad</span>
           </h2>
           <p className="text-foreground/60 max-w-xl mx-auto">
             Ofrecemos un conjunto de capacidades tecnológicas para abordar los desafíos
@@ -74,13 +74,13 @@ export default function Services() {
               key={s.title}
               variants={cardVariants}
               whileHover={{ y: -6, scale: 1.01 }}
-              className="group p-8 rounded-2xl glass-card hover:border-violet/30 hover:bg-violet/[0.03] transition-all"
+              className="group p-8 rounded-2xl glass-card hover:border-violet-accent/30 hover:bg-violet-accent/[0.03] transition-all"
             >
               <motion.div
                 whileHover={{ rotate: 10 }}
                 transition={{ type: "spring", stiffness: 200 }}
               >
-                <s.icon className="w-8 h-8 text-violet mb-4" />
+                <s.icon className="w-8 h-8 text-violet-accent mb-4" />
               </motion.div>
               <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
               <p className="text-foreground/60 text-sm leading-relaxed">{s.desc}</p>

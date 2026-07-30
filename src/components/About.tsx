@@ -34,7 +34,7 @@ const cardVariants = {
 
 export default function About() {
   return (
-    <section id="empresa" className="py-24 px-6 bg-white/5">
+    <section id="empresa" className="py-24 px-6 bg-[var(--section-alt)]">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export default function About() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Transformamos necesidades de negocio{" "}
-            <span className="text-violet">en soluciones digitales</span>
+            <span className="text-violet-accent">en soluciones digitales</span>
           </h2>
           <p className="text-foreground/60 max-w-3xl mx-auto leading-relaxed">
             OrSoft es una empresa dedicada al desarrollo de software a medida para
@@ -65,10 +65,10 @@ export default function About() {
               viewport={{ once: true, margin: "-50px" }}
               variants={cardVariants}
               whileHover={{ y: -4, scale: 1.02 }}
-              className="p-6 rounded-xl glass-card hover:border-violet/30 hover:bg-violet/[0.03] transition-all"
+              className="p-6 rounded-xl glass-card hover:border-violet-accent/30 hover:bg-violet-accent/[0.03] transition-all"
             >
-              <div className="w-10 h-10 rounded-lg bg-violet/10 flex items-center justify-center mb-4">
-                <div className="w-2 h-2 rounded-full bg-violet" />
+              <div className="w-10 h-10 rounded-lg bg-violet-accent/10 flex items-center justify-center mb-4">
+                <div className="w-2 h-2 rounded-full bg-violet-accent" />
               </div>
               <h3 className="font-semibold mb-2">{v.title}</h3>
               <p className="text-sm text-foreground/60 leading-relaxed">{v.desc}</p>
@@ -78,10 +78,10 @@ export default function About() {
 
         <div className="relative mt-20">
           <div className="absolute inset-0 flex items-center" aria-hidden="true">
-            <div className="w-full border-t border-white/10" />
+            <div className="w-full border-t border-foreground/10" />
           </div>
           <div className="relative flex justify-center">
-            <span className="px-4 text-xs uppercase tracking-widest text-foreground/40 bg-white/5">
+            <span className="px-4 text-xs uppercase tracking-widest text-foreground/40 bg-background">
               Detrás de OrSoft
             </span>
           </div>
@@ -94,29 +94,29 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-10"
         >
-          <div className="max-w-lg mx-auto p-8 rounded-2xl border border-violet/10 bg-violet/[0.02] hover:border-violet/20 hover:bg-violet/[0.04] transition-all text-center shadow-sm">
+          <div className="max-w-lg mx-auto p-8 rounded-2xl border border-violet-accent/10 bg-violet-accent/[0.02] hover:border-violet-accent/20 hover:bg-violet-accent/[0.04] transition-all text-center shadow-sm">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="mb-5 inline-flex items-center justify-center w-24 h-24 rounded-full border-2 border-violet/30 overflow-hidden"
+              className="mb-5 inline-flex items-center justify-center w-24 h-24 rounded-full border-2 border-violet-accent/30 overflow-hidden"
             >
               <Image src="/perfil.png" alt="Mateo Gerbaudo" width={96} height={96} className="object-cover w-full h-full" />
             </motion.div>
             <h3 className="text-xl font-semibold mb-1">Mateo Gerbaudo</h3>
-            <p className="text-sm text-violet-light mb-4">Desarrollador Full Stack</p>
+            <p className="text-sm text-violet-accent-light mb-4">Desarrollador Full Stack</p>
             <p className="text-sm text-foreground/60 leading-relaxed mb-6">
               Estudiante de 5° año de Ingeniería en Sistemas de Información en UTN FRVM.
               Apasionado por construir soluciones web completas, desde el frontend hasta el backend y el despliegue.
             </p>
             <div className="flex flex-col items-center gap-2 text-sm text-foreground/60 mb-6">
               <div className="flex items-center gap-2">
-                <MailIcon className="w-4 h-4 text-violet" />
+                <MailIcon className="w-4 h-4 text-violet-accent" />
                 <span>mgerbaudo02@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPinIcon className="w-4 h-4 text-violet" />
+                <MapPinIcon className="w-4 h-4 text-violet-accent" />
                 <span>Villa María, Córdoba, Argentina</span>
               </div>
             </div>
