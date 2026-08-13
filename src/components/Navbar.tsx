@@ -5,11 +5,11 @@ import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
-  { label: "Empresa", href: "#empresa" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Metodología", href: "#metodologia" },
+  { label: "Empresa", href: "/#empresa" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Metodología", href: "/#metodologia" },
   { label: "Herramienta", href: "/linkorsoft" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="OrSoft"
@@ -60,10 +60,10 @@ export default function Navbar() {
           ))}
           <ThemeToggle />
           <a
-            href="/linkorsoft"
+            href="/#contacto"
             className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark transition-colors"
           >
-            LinkOrSoft
+            Solicitar consulta
           </a>
         </div>
 
@@ -97,11 +97,11 @@ export default function Navbar() {
             ))}
             <ThemeToggle />
             <a
-              href="/linkorsoft"
+              href="/#contacto"
               onClick={() => setOpen(false)}
               className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark text-center transition-colors"
             >
-              LinkOrSoft
+              Solicitar consulta
             </a>
           </div>
         </div>
