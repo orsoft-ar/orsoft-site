@@ -44,7 +44,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold mb-3">Herramientas</h4>
             <ul className="space-y-2 text-sm text-foreground/50">
               <li><a href="/linkorsoft" className="hover:text-violet-accent transition-colors">LinkOrSoft — links in bio</a></li>
-              <li><a href="#herramienta" className="hover:text-violet-accent transition-colors">Herramienta</a></li>
+              <li><a href="/linkorsoft" className="hover:text-violet-accent transition-colors">Herramienta</a></li>
             </ul>
           </div>
 

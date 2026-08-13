@@ -8,7 +8,7 @@ const links = [
   { label: "Empresa", href: "#empresa" },
   { label: "Servicios", href: "#servicios" },
   { label: "Metodología", href: "#metodologia" },
-  { label: "Herramienta", href: "#herramienta" },
+  { label: "Herramienta", href: "/linkorsoft" },
   { label: "Contacto", href: "#contacto" },
 ];
 
