@@ -5,11 +5,11 @@ import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
-  { label: "Empresa", href: "/#empresa" },
-  { label: "Servicios", href: "/#servicios" },
-  { label: "Metodología", href: "/#metodologia" },
+  { label: "Empresa", href: "#empresa" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Metodología", href: "#metodologia" },
   { label: "Herramienta", href: "/linkorsoft" },
-  { label: "Contacto", href: "/#contacto" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export default function Navbar() {
@@ -59,12 +59,6 @@ export default function Navbar() {
             </a>
           ))}
           <ThemeToggle />
-          <a
-            href="/#contacto"
-            className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark transition-colors"
-          >
-            Solicitar consulta
-          </a>
         </div>
 
         <button
@@ -96,13 +90,6 @@ export default function Navbar() {
               </a>
             ))}
             <ThemeToggle />
-            <a
-              href="/#contacto"
-              onClick={() => setOpen(false)}
-              className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark text-center transition-colors"
-            >
-              Solicitar consulta
-            </a>
           </div>
         </div>
       )}

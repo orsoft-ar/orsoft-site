@@ -26,17 +26,17 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold mb-3">Empresa</h4>
             <ul className="space-y-2 text-sm text-foreground/50">
-              <li><a href="/#empresa" className="hover:text-violet-accent transition-colors">Sobre OrSoft</a></li>
-              <li><a href="/#metodologia" className="hover:text-violet-accent transition-colors">Metodología</a></li>
+              <li><a href="#empresa" className="hover:text-violet-accent transition-colors">Sobre OrSoft</a></li>
+              <li><a href="#metodologia" className="hover:text-violet-accent transition-colors">Metodología</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-sm font-semibold mb-3">Servicios</h4>
             <ul className="space-y-2 text-sm text-foreground/50">
-              <li><a href="/#servicios" className="hover:text-violet-accent transition-colors">Software a medida</a></li>
-              <li><a href="/#servicios" className="hover:text-violet-accent transition-colors">Apps web</a></li>
-              <li><a href="/#servicios" className="hover:text-violet-accent transition-colors">Automatización</a></li>
+              <li><a href="#servicios" className="hover:text-violet-accent transition-colors">Software a medida</a></li>
+              <li><a href="#servicios" className="hover:text-violet-accent transition-colors">Apps web</a></li>
+              <li><a href="#servicios" className="hover:text-violet-accent transition-colors">Automatización</a></li>
             </ul>
           </div>
 
