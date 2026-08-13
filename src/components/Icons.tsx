@@ -97,3 +97,31 @@ export function TrendingIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export function Link2Icon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M15 7h3a5 5 0 015 5 5 5 0 01-5 5h-3M9 17H6a5 5 0 01-5-5 5 5 0 015-5h3M8 12h8" />
+    </svg>
+  );
+}
+
+export function PaletteIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 22a10 10 0 1110-10c0 1.66-1.34 3-3 3h-2.27a1.73 1.73 0 00-1.2 2.97A1.73 1.73 0 0013.73 20H12z" />
+      <circle cx="7.5" cy="10.5" r="1.5" />
+      <circle cx="10" cy="6.5" r="1.5" />
+      <circle cx="16" cy="6.5" r="1.5" />
+    </svg>
+  );
+}
+
+export function SmartphoneIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+      <line x1="12" y1="18" x2="12.01" y2="18" />
+    </svg>
+  );
+}

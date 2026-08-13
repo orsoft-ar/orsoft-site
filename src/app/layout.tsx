@@ -148,6 +148,21 @@ export default function RootLayout({
                   priceRange: "$$",
                 },
                 {
+                  "@type": "WebApplication",
+                  "@id": "https://linkorsoft.site/#app",
+                  name: "LinkOrSoft",
+                  url: "https://linkorsoft.site",
+                  applicationCategory: "BusinessApplication",
+                  operatingSystem: "Web",
+                  offers: {
+                    "@type": "Offer",
+                    price: "0",
+                    priceCurrency: "USD",
+                  },
+                  description:
+                    "Herramienta gratuita de links in bio. Reuní tus redes, tu WhatsApp y tu portfolio en una página personalizada con una URL única, ideal para tu bio de Instagram, TikTok, LinkedIn o YouTube.",
+                },
+                {
                   "@type": "FAQPage",
                   "@id": `${baseUrl}/#faq`,
                   mainEntity: [

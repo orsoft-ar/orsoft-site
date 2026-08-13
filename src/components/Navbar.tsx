@@ -8,6 +8,7 @@ const links = [
   { label: "Empresa", href: "#empresa" },
   { label: "Servicios", href: "#servicios" },
   { label: "Metodología", href: "#metodologia" },
+  { label: "Herramienta", href: "#herramienta" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -59,10 +60,10 @@ export default function Navbar() {
           ))}
           <ThemeToggle />
           <a
-            href="#contacto"
+            href="/linkorsoft"
             className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark transition-colors"
           >
-            Solicitar consulta
+            LinkOrSoft
           </a>
         </div>
 
@@ -96,11 +97,11 @@ export default function Navbar() {
             ))}
             <ThemeToggle />
             <a
-              href="#contacto"
+              href="/linkorsoft"
               onClick={() => setOpen(false)}
               className="text-sm px-5 py-2 rounded-full bg-violet text-white hover:bg-violet-dark text-center transition-colors"
             >
-              Solicitar consulta
+              LinkOrSoft
             </a>
           </div>
         </div>

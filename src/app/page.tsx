@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Methodology from "@/components/Methodology";
 import TechCapabilities from "@/components/TechCapabilities";
 import WhyUs from "@/components/WhyUs";
+import ProductSection from "@/components/ProductSection";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -26,6 +27,8 @@ export default function Home() {
       <TechCapabilities />
       <SectionDivider />
       <WhyUs />
+      <SectionDivider />
+      <ProductSection />
       <SectionDivider />
       <FAQ />
       <SectionDivider />
